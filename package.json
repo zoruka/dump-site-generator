@@ -1,0 +1,14 @@
+{
+	"name": "dump-site-generator",
+	"version": "0.0.0",
+	"description": "generate a dump site folder",
+	"license": "MIT",
+	"scripts": {
+		"build": "node scripts/build.js",
+		"dev": "yarn build && serve dist"
+	},
+	"devDependencies": {
+		"html-minifier": "^4.0.0",
+		"serve": "^14.2.0"
+	}
+}
