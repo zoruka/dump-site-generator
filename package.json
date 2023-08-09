@@ -1,6 +1,6 @@
 {
 	"name": "dump-site-generator",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "generate a dump site folder",
 	"license": "MIT",
 	"scripts": {
