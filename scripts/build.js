@@ -18,8 +18,8 @@ const {
 } = process.env;
 
 const replaceEnvironmentVariables = (content) => {
-	const regex = /{{(.*?)}}/g; // matches {{ENV_VARIABLE}}
-	return content.replace(regex, (_, name) => process.env[name]);
+	const regex = /{{(.*?)}}/g;
+	return content.replace(regex, (name) => process.env[name.slice(2, -2)]);
 };
 
 const buildFile = async (srcPath, destPath) => {
